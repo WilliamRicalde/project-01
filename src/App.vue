@@ -41,8 +41,8 @@ const handleAnimation = () => console.log('animation')
     />
   </div>
   <section>
-    <h1 v-if="question">pregunta preguntosa</h1>
-    <h1 v-else>Texto textoso</h1>
+    <h1 v-if="question">¿Quieres ser mi novia?</h1>
+    <h1 v-else>Wujuuuuu 🥳🥳🥰❤️</h1>
     <button @click="handleConfetti" class="yes-button" v-if="question">Si</button>
   </section>
 </template>
