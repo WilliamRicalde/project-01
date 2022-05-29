@@ -21,16 +21,17 @@ const handleAnimation = () => console.log('animation')
 
 <template>
   <main>
-    <video ref="video" controls @ended="handleAnimation" >
-      <source src="https://v16-webapp.tiktok.com/0a8305350e313c90cdab42eb227130c8/62940e70/video/tos/useast2a/tos-useast2a-ve-0068c004/c45a363fc6c148d5a71151a04801fc4a/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=1816&bt=908&btag=80000&cs=0&ds=3&ft=eXd.6HpDMyq8ZAAXSwe2NJZ3yl7Gb&mime_type=video_mp4&qs=0&rc=Njw3Nzo5MzczZWZkZGdmZ0BpMzlnOmg6Zjg7OjMzNzczM0AvYjExXy41NmMxMDUuXmEyYSNxMWdgcjRnMWJgLS1kMTZzcw%3D%3D&l=202205291822410101920460321B61D0F6" type="video/mp4" />
-    </video>
-    <button v-if="!isPlaying" class="play-button" @click="handlePlay">
+    <!-- <video ref="video" controls @ended="handleAnimation" >
+      <source src="https://firebasestorage.googleapis.com/v0/b/test-admin-2e5ae.appspot.com/o/test%2F9427BF0D-D3D3-496F-8E6C-341E9F495BC9.MOV?alt=media&token=f38366e9-dbfc-42ed-86ad-e1307766d145" type="video/MOV" />
+    </video> -->
+    <iframe src="https://www.youtube.com/embed/dghG3kYx9Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <button v-if="!isPlaying" class="play-button" @click="handlePlay">
       <Vue3Lottie
         animationLink="https://assets4.lottiefiles.com/packages/lf20_gpjapb8d.json"
         :height="200"
         :width="200"
       />
-    </button>
+    </button> -->
   </main>
   <div>
     <Vue3Lottie
@@ -64,6 +65,11 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
+}
+
+iframe {
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
