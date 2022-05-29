@@ -22,7 +22,7 @@ const handleAnimation = () => console.log('animation')
 <template>
   <main>
     <video ref="video" preload="auto" controls @ended="handleAnimation" >
-      <source src="./assets/video.mov" />
+      <source src="https://res.cloudinary.com/haitek/video/upload/v1653861225/video_dlvlzg.mov" />
     </video>
     <button v-if="!isPlaying" class="play-button" @click="handlePlay">
       <Vue3Lottie
