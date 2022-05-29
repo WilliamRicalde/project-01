@@ -21,17 +21,16 @@ const handleAnimation = () => console.log('animation')
 
 <template>
   <main>
-    <!-- <video ref="video" controls @ended="handleAnimation" >
-      <source src="https://firebasestorage.googleapis.com/v0/b/test-admin-2e5ae.appspot.com/o/test%2F9427BF0D-D3D3-496F-8E6C-341E9F495BC9.MOV?alt=media&token=f38366e9-dbfc-42ed-86ad-e1307766d145" type="video/MOV" />
-    </video> -->
-    <iframe src="https://www.youtube.com/embed/dghG3kYx9Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <!-- <button v-if="!isPlaying" class="play-button" @click="handlePlay">
+    <video ref="video" controls @ended="handleAnimation" >
+      <source src="https://res.cloudinary.com/haitek/video/upload/v1653860242/9427BF0D-D3D3-496F-8E6C-341E9F495BC9.MOV_dglmya.mov" type="video/MOV" />
+    </video>
+    <button v-if="!isPlaying" class="play-button" @click="handlePlay">
       <Vue3Lottie
         animationLink="https://assets4.lottiefiles.com/packages/lf20_gpjapb8d.json"
         :height="200"
         :width="200"
       />
-    </button> -->
+    </button>
   </main>
   <div>
     <Vue3Lottie
@@ -65,11 +64,6 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
-}
-
-iframe {
-  width: 100vw;
-  height: 100vh;
 }
 
 main {
